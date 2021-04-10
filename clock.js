@@ -31,21 +31,22 @@ function theClockItself(){
         option.timeZone = cities[i].timeZone;
 
         let str = now.toLocaleString('en',option);
-        let splice = str.split(',')
+        let splice = str.split(',');
+
         let month = splice[0].split(' ')[0];
         let day = splice[0].split(' ')[1];
         let year = splice[1];
 
-        let DMY_combine = day+' '+month+','+year;
+        let DMY_combine = day + ' ' + month + ',' + year;
         let time = splice[2];
         let country = cities[i].city;
 
         const tr = document.createElement('tr');
-
-        tr.innerHTML=`<td>
+        tr.className = "tr";
+        tr.innerHTML=`<td class="td_cities">
                   <h3>${country}</h3><br><p>${DMY_combine}</p>
                   </td>
-                  <td><p class="time">${time}</p>
+                  <td class="td_time"><p class="time">${time}</p></td>
                   `
         timeContainer.appendChild(tr);
     }

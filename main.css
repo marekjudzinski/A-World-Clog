@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+}
+h1{
+    align-self: center;
+    font-size: 80px;
+}
+
+/*js class*/
+.time{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    font-size: 28px;
+}
+.td_cities{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.td_time{
+
+}
+.tr{
+    border: 1px solid black;
+}
+h3{
+    font-size: 25px;
+}
+
+/*p{*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+.world_clock{
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
