@@ -2,8 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-radius: 8px;
 }
 body{
+    background-image: url("https://cdn.shopify.com/s/files/1/0088/2058/8659/articles/sean-o-KMn4VEeEPR8-unsplash_2048x2048.jpg?v=1577988713");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -12,46 +18,47 @@ body{
     font-family: 'Patrick Hand', cursive;
 }
 h1{
-    align-self: center;
+    width: 100%;
+    border:1px solid black;
+    text-align: center;
     font-size: 80px;
 }
 
-/*js class*/
-.time{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0;
-    font-size: 28px;
-}
-.td_cities{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.td_time{
-
-}
-.tr{
-    border: 1px solid black;
-}
-h3{
-    font-size: 25px;
-}
-
-/*p{*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
 .container{
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 .world_clock{
     border: 1px solid black;
-    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
+
+/*js class*/
+h3{
+    font-size: 45px;
+}
+.time{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 38px;
+}
+.time-table{
+    width: 100%;
+}
+.time-table tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 5px 15px;
+}
+.DMY_combine{
+    background-color: lightskyblue;
+    padding: 5px 20px;
+    width: 120px;
+    text-align: center;
+    border-radius: 25px;
+}

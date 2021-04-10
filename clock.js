@@ -22,7 +22,8 @@ const cities = [
 ];
 
 option = {day:"2-digit",month:"short",year:"numeric",hour12:false,hour:"numeric",minute:"2-digit"};
-const timeContainer = document.querySelector('#table');
+
+const timeContainer = document.querySelector('table');
 
 function theClockItself(){
     timeContainer.innerHTML='';
@@ -42,12 +43,8 @@ function theClockItself(){
         let country = cities[i].city;
 
         const tr = document.createElement('tr');
-        tr.className = "tr";
-        tr.innerHTML=`<td class="td_cities">
-                  <h3>${country}</h3><br><p>${DMY_combine}</p>
-                  </td>
-                  <td class="td_time"><p class="time">${time}</p></td>
-                  `
+        tr.innerHTML=`<td><h3>${country}</h3><br><p class="DMY_combine">${DMY_combine}</p></td>
+                  <td><p class="time">${time}</p></td>`
         timeContainer.appendChild(tr);
     }
 }
