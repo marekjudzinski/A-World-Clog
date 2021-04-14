@@ -21,7 +21,7 @@ const cities = [
     },
 ];
 
-option = {day:"2-digit",month:"short",year:"numeric",hour12:false,hour:"numeric",minute:"2-digit"};
+option = {day:"2-digit", month:"short", year:"numeric", hour12:false, hour:"numeric", minute:"2-digit"};
 
 const timeContainer = document.querySelector('table');
 
@@ -50,4 +50,4 @@ function theClockItself(){
 }
 
 theClockItself();
-setInterval(theClockItself,30000);
+setInterval(theClockItself,1000);

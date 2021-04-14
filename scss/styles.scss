@@ -1,40 +1,5 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body{
-  background-image: url("https://cdn.shopify.com/s/files/1/0088/2058/8659/articles/sean-o-KMn4VEeEPR8-unsplash_2048x2048.jpg?v=1577988713");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Patrick Hand', cursive;
-}
-h1{
-  max-width: 100%;
-  align-self: center;
-  background-color: lightskyblue;
-  border-radius: 25px;
-  text-align: center;
-  font-size: 80px;
-  padding: 0 40px;
-}
-
-.container{
-  width: 600px;
-  margin: 0 auto;
-}
-.world_clock{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
+@import "settings/reset";
+@import "elements/body";
 
 
 /*js class*/

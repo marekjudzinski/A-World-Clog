@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background-image: url("https://cdn.shopify.com/s/files/1/0088/2058/8659/articles/sean-o-KMn4VEeEPR8-unsplash_2048x2048.jpg?v=1577988713");
@@ -25,13 +25,20 @@ h1 {
   padding: 0 40px; }
 
 .container {
-  width: 600px;
+  width: 630px;
   margin: 0 auto; }
 
 .world_clock {
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    height: 100%; }
+  .container {
+    width: 100vh; } }
 
 /*js class*/
 h3 {
